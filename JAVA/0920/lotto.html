@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>로또1등</title>
+  <style>
+    h1 {
+      text-align: center;
+    }
+
+    .form {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      margin: 1rem 0;
+    }
+    
+    .form > input {
+      margin-bottom: 3rem;
+    }
+
+    .form > button {
+      margin-top: 2rem;
+    }
+
+    .ball {
+      width: 6rem;
+      height: 6rem;
+      margin: .5rem;
+      background-color: rgb(121, 77, 70);
+      border-radius: 50%;
+      text-align: center;
+      line-height: 6rem;
+      font-size: x-large;
+      font-weight: bold;
+    }
+    
+    .ball-container {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>로또 번호</h1>
+  <form class="form" id="lotto-form">
+    <select class="form-select" aria-label="Default select example" name="lotto-num">
+      <option value="1">1개</option>
+      <option value="2">2개</option>
+      <option value="3">3개</option>
+      <option value="4">4개</option>
+      <option value="5">5개</option>
+    </select>
+    <button type="submit" class="button" id="lotto-btn"> ???? </button>
+  </form>
+
+  <div id="result"></div>
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+  
+  
+  <script>
+    const colors = ["yellow", "blue", "red", "grey", "green"];
+    const form = document.querySelector('#lotto-form')
+    form.addEventListener('submit', function(event) {
+      event.preventDefault()
+      
+      //https://developer.mozilla.org/en-US/docs/Web/API/FormData/FormData
+      const formData = new FormData(form)
+      if (formData.get('lotto-num') < 1) {
+        alert('한개 이상 구매')
+        return
+      }
+      //https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector
+      const result = document.querySelector('#result')
+      while (result.hasChildNodes()) {
+        result.removeChild(result.firstChild)
+      }
+      for (let i = 0; i < formData.get('lotto-num'); i++) {
+
+        let ballContainer = document.createElement('div')
+        ballContainer.classList.add('ball-container')
+
+        let randoms = _.sampleSize(_.range(1, 46), 6)
+
+
+        // 1~6번째 번호를 꺼내와서 정렬
+        let numbers = randoms.splice(0, 6)
+        numbers.push(randoms[0])
+
+        //https://velog.io/@chaeb1n/for%EB%AC%B8
+        // 공 만들기
+        for (let i = 0; i < 6; i++) {
+          let ball = document.createElement('div')
+          ball.classList.add('ball')
+          ball.innerText = numbers[i]
+          if (numbers[i] >= 1 && numbers[i] <= 10) {
+            ball.style.backgroundColor = colors[0]
+          }
+          else if (numbers[i] >= 11 && numbers[i] <= 20) {
+            ball.style.backgroundColor = colors[1]
+          }
+          else if (numbers[i] >= 21 && numbers[i] <= 30) {
+            ball.style.backgroundColor = colors[2]
+          }
+          else if (numbers[i] >= 31 && numbers[i] <= 40) {
+            ball.style.backgroundColor = colors[3]
+          }
+          else if (numbers[i] >= 41 && numbers[i] <= 45) {
+            ball.style.backgroundColor = colors[4]
+          }
+          // 컨테이너에 붙인다
+          ballContainer.appendChild(ball)
+        }
+       
+        // 컨테이너를 결과 영역에 붙인다. 
+        result.appendChild(ballContainer)
+      }
+    })
+
+  </script>
+</body>
+</html>

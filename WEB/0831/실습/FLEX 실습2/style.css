@@ -1,0 +1,16 @@
+/* 아래에 CSS를 작성해주세요. */
+.card{
+  display: flex;
+  justify-content: flex-start;
+  width: 300px;
+}
+
+.card-image{
+  width: 100%;
+  margin: 2rem
+}
+
+.card2{
+  width: 100%;
+  margin: 2rem;
+}

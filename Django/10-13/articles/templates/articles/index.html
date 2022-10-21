@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<img src="{% static '개발자.jpg' %}" alt="img" class= "w-20">
+<a class="btn btn-danger me-3 d-flex justify-content-center" href="{% url 'articles:create' %}">새글쓰기</a>
+<br>
+{% for article in articles %}
+<h3><a href="{% url 'articles:detail' article.pk %}">{{ article.title }}</a></h3>
+<p>{{ article.created_at }} | {{ article.updated_at }}</p>
+<hr>
+{% endfor %}
+{% endblock %}

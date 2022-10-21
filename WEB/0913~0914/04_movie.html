@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="./images/film-solid (1).png">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>04_movie</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color:rgb(22, 22, 22); color:rgb(255, 255, 255)">
+
+<!-- nav -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >	
+<div class="container-fluid">
+	<img src="./images/logo.png" alt="" style="width: 90px; height: 70px;">
+	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarNav" style="color:rgb(12, 12, 12)">	
+		<ul class="navbar-nav">
+			<li class="nav-item">
+			<a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+			</li>
+			<li class="nav-item">
+			<a class="nav-link" href="./02_community.html">Community</a>
+			</li>
+			<li class="nav-item">
+			<a class="nav-link" href="#" data-toggle="modal" data-target="#login">Login</a>
+			<div class="modal" id="login" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">Modal title</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							<form>
+								<form>
+									<div class="mb-3">
+										<label for="exampleInputEmail1" class="form-label">Email address</label>
+										<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+										<div id="emailHelp" class="form-text">
+											We'll never share your email with anyone else.
+										</div>
+									</div>
+									<div class="mb-3">
+										<label for="exampleInputPassword1" class="form-label">Password</label>
+										<input type="password" class="form-control" id="exampleInputPassword1">
+									</div>
+									<div class="mb-3 form-check">
+										<input type="checkbox" class="form-check-input" id="exampleCheck1">
+										<label class="form-check-label" for="exampleCheck1">Check me out</label>
+									</div>
+								</form>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary">Submit</button>
+							<button type="button" class="btn btn-primary">회원가입</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			</li>
+		</ul>
+	</div>
+</div>
+</nav>
+<!--image-->
+<div class="d-flex justify-content-center m-5">
+	<img src="./images/movie1.jpg" style="width:300px; height:350px; display:block;">
+	<div style="width:50%" class="ms-5">
+		<h1>쇼생크 탈출</h1>
+		<p>
+			 드라마 · 희망적인 · 2시간 22분 · 평균 4.4 <span class="badge bg-secondary">15</span>
+		</p>
+		<p>
+			 촉망받는 은행 부지점장 앤디는 아내와 그녀의 정부를 살해한 혐의로 종신형을 받고 쇼생크 교도소에 수감된다. 적응을 못하던 앤디는 레드와 친해지며 교도소 생활에 적응하려 한다.
+		</p>
+		<div>
+			<button type="button" class="btn btn-danger">무료로 감상하기</button>
+		</div>
+	</div>
+</div>
+<div class="text-center">
+	<a type="button" class="btn btn-dark" href= "./04_movie.html">콘텐츠 정보</a>
+  <a type="button" class="btn btn-dark" href= "https://movie.naver.com/movie/bi/mi/scriptAndRelate.naver?code=17421">관련 콘텐츠</a>
+</div>
+<div>
+	<div class="row ms-5">
+		<div class="col-12 col-lg-8">
+			<img height="24px" src="https://an2-mars.amz.wtchn.net/assets/reason_icons/rate_24-c3f027bf1048b7f33daefe37a233e9bf8d1d331b0b508bedefe7a8fed772a5d1.png" width="24px" height="24px" class="css-5ogpn1">
+			<div class="d-inline-block mb-3">최근 시청한 회원님들의 86%가 4점 이상 평가했어요</div>
+			<div>
+				<h3>관련동영상</h3>
+
+				<a href="https://www.youtube.com/watch?v=p8tgEikbrvc">
+				<img src="https://img.youtube.com/vi/p8tgEikbrvc/0.jpg" class="css-1mxmenj" style="width:300px; height:200px;">			
+				</a>
+
+				<a href="https://www.youtube.com/watch?v=8ecTKUtmsiI">
+				<img src="https://i.ytimg.com/an_webp/mSKfbb7XrNU/mqdefault_6s.webp?du=3000&sqp=CJ_3hZkG&rs=AOn4CLDUF89tyAUrpm7KQC6yqvH_9-OYkQ" class="css-1mxmenj" style="width:300px; height:200px;">	
+				</a>
+
+				<a href="https://www.youtube.com/watch?v=mSKfbb7XrNU">
+					<img src="https://i.ytimg.com/vi/ktQhmLnK9P4/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDBz5U1OCwRUdvssTdsEQhfvCMcsA" class="css-1mxmenj" style="width:300px; height:200px;">	
+					</a>
+
+				<p>
+					<a type="button" class="btn btn-dark" href="https://www.youtube.com/watch?v=p8tgEikbrvc">메인예고편</a>
+				</p>
+				<h3>감독/출연</h3>
+				<div>
+					<div class="row my-3">
+						<div class="col-12 col-lg-6">
+							<div class="d-flex">
+								<img src="https://an2-img.amz.wtchn.net/image/v2/WT7umwyjtMsALOgIJVEbyw.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk1qUXdlREkwTUNKZExDSndJam9pTDNZeEwzQmxiM0JzWlM4ek56SmpNbU5oT0RCaU0ySmpPRFpoTTJFME5DNXFjR2NpZlEuNVphZEw2LWp4Z3ZfbHVZdWduOG92aWI1eUVhanpDZDkwQlVvSGRVcjczdw" class="rounded-circle" style="width:70px;">
+								<div class="ms-3 my-auto">
+									<p class="mb-0">
+										 프랭크 다라본트
+									</p>
+									<p class="text-muted mb-0">
+										 감독
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-6">
+							<div class="d-flex">
+								<img src="https://an2-img.amz.wtchn.net/image/v2/KUJ0Z6mRX6fJ0d155Ad_mQ.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk1qUXdlREkwTUNKZExDSndJam9pTDNZeEwzQmxiM0JzWlM4M1pUZzROall5WkRWbE9XRTVOakV4TlRjellpNXFjR2NpZlEuN2thMy0yWkhINW9acDlQWWdVRmQ1MDJGRWtlUGZvcTRSRUVzRUVzYmdqSQ" class="rounded-circle" style="width:70px;">
+								<div class="ms-3 my-auto">
+									<p class="mb-0">
+										 팀 로빈스
+									</p>
+									<p class="text-muted mb-0">
+										 주연 · 앤디 듀프레인
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="row my-3">
+						<div class="col-12 col-lg-6">
+							<div class="d-flex">
+								<img src="https://an2-img.amz.wtchn.net/image/v2/wUqNNRCQ1wAuaN0li0PKVg.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk1qUXdlREkwTUNKZExDSndJam9pTDNZeUwzTjBiM0psTDNCbGNuTnZiaTh4TmpRNU5qVTJNak13TXpRMU16a3dNRGMySW4wLmpSTEoycUVtNklQVHFvUmpBRWdNM3A3WHNGSU5URmc4UWs1QVB5dUJMejg" class="rounded-circle" style="width:70px;">
+								<div class="ms-3 my-auto">
+									<p class="mb-0">
+										 모건 프리먼
+									</p>
+									<p class="text-muted mb-0">
+										 주연 · 레드 (엘리스 보이스 레딩)
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-6">
+							<div class="d-flex">
+								<img src="https://an2-img.amz.wtchn.net/image/v2/9pkuCig7yze0sSWj25bddg.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk1qUXdlREkwTUNKZExDSndJam9pTDNZeEwzQmxiM0JzWlM4MFpHTTJPR000WkRreU1EUTBZall4TkRRNVl5NXFjR2NpZlEuYWNkQzRpM1VDZFJ6akVMcEJ0ZjVQUXc5bGtBRUxVQXljczdlNjJhWXBGaw" class="rounded-circle" style="width:70px;">
+								<div class="ms-3 my-auto">
+									<p class="mb-0">
+										 밥 건톤
+									</p>
+									<p class="text-muted mb-0">
+										 조연 · 노튼 소장
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="row my-3">
+						<div class="col-12 col-lg-6">
+							<div class="d-flex">
+								<img src="https://an2-img.amz.wtchn.net/image/v2/enDlkcrtURaYyGNB1q5Teg.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk1qUXdlREkwTUNKZExDSndJam9pTDNZeEwzQmxiM0JzWlM4d04yUTNNR05oTmpkallXUTBaREF6TmpRM1l5NXFjR2NpZlEuTTRUeW5ucE55QUkydG4xekNMU2pNdGtvRzdMOXEycVBNcTZDVGIxd2RObw" class="rounded-circle" style="width:70px;">
+								<div class="ms-3 my-auto">
+									<p class="mb-0">
+										 윌리엄 새들러
+									</p>
+									<p class="text-muted mb-0">
+										 조연 · 헤이우드
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-6">
+							<div class="d-flex">
+								<img src="https://an2-img.amz.wtchn.net/image/v2/DPVh3P0XyH0ZmD7QQ7ZzLw.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk1qUXdlREkwTUNKZExDSndJam9pTDNZeEwzQmxiM0JzWlM4eFlUZ3dPR1ZqTXpNeU5USTFOR1F4TldJd055NXFjR2NpZlEudmdoSEdldFBDWHdXX1JFQlZCQ2kxQWowZEFmcEtNWFpWa2FQNk9uLVRCcw" class="rounded-circle" style="width:70px;">
+								<div class="ms-3 my-auto">
+									<p class="mb-0">
+										 클래시 브라운
+									</p>
+									<p class="text-muted mb-0">
+										 조연 · 하들리
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="row my-3">
+						<div class="col-12 col-lg-6">
+							<div class="d-flex">
+								<img src="https://an2-img.amz.wtchn.net/image/v2/U8WqMKKWvHoTuEy14kKGqA.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk1qUXdlREkwTUNKZExDSndJam9pTDNZeEwzQmxiM0JzWlM5alpURTFaV1JrWVdGaFl6RXdNakJpTmpJeE9TNXFjR2NpZlEuNU5haW9GQUZ5c3luaU5wSndkRkk4b3preEVFR2NXU0ZEZ1pRWmpHZG16dw" class="rounded-circle" style="width:70px;">
+								<div class="ms-3 my-auto">
+									<p class="mb-0">
+										 길 벨로우스
+									</p>
+									<p class="text-muted mb-0">
+										 조연 · 토미
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-6">
+							<div class="d-flex">
+								<img src="https://an2-img.amz.wtchn.net/image/v2/LNx1qtnHm8dX7bYGfiPLhQ.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk1qUXdlREkwTUNKZExDSndJam9pTDNZeEwzQmxiM0JzWlM4ek16SmlZMkZoWm1Jek1qbG1OVFZrT1RsbU1TNXFjR2NpZlEueE84QmFGa0hQd3ZQbW9mSUJyc2hiZ1UtUFpQbkRCa1NYMWFablpIM2lTYw" class="rounded-circle" style="width:70px;">
+								<div class="ms-3 my-auto">
+									<p class="mb-0">
+										 마크 롤스톤
+									</p>
+									<p class="text-muted mb-0">
+										 조연 · 보그스 다이아몬드
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="row my-3">
+						<div class="col-12 col-lg-6">
+							<div class="d-flex">
+								<img src="https://an2-img.amz.wtchn.net/image/v2/FkII-pPyhSaZFZDGnmopNw.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk1qUXdlREkwTUNKZExDSndJam9pTDNZeEwzQmxiM0JzWlM4ME5USTNaR0kwT1RNM1pHUmlZVFl5WlRBNE5DNXFjR2NpZlEuMEozX250UWhPdTdpZWdablQ4T1pkVDBCZFZ3RkNuNkZWX0MzUXJuc2c5MA" class="rounded-circle" style="width:70px;">
+								<div class="ms-3 my-auto">
+									<p class="mb-0">
+										 제임스 휘트모어
+									</p>
+									<p class="text-muted mb-0">
+										 조연 · 브룩스 하틀렌
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="">
+						<div>
+							<div class="fs-3 d-inline-block mr-3 mb-3 mt-3">
+								사용자 평
+							</div>
+							<span>10</span>
+						</div>
+						<div class="d-flex m">
+							<img src="https://ichef.bbci.co.uk/news/660/cpsprodpb/DCE1/production/_104454565_mary-mcgowan_caught-in-the-act_00001294.jpg" class="rounded-circle" style="width: 50px; height:50px;">
+							<div class="d-inline-block m-3">
+								<div class="d-flex">
+									<span>가나다</span>
+									<div>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+									</div>
+								</div>
+								 <p class= "text-muted mb-0">한 인간의 출애굽기. 한 자유로운 영혼을 가두어버린 감옥이라는 또다른 사회. 그 사회를 구성하는 간수, 죄수 등의 구성원들. 먼지나는 바닥과 투박한 돌덩이들의 회색 세계 속에서 유달리 빛이 나는 앤디가 있었다. 감옥으로 묘사된 사회에 숨구멍을 뚫어주는 이 희망의 대서사시는 반지의 제왕, 매드맥스: 분노의 도로와 함께 나만의 최고의 걸작이라고 믿어 의심치 않는다.
+                </p>
+                </div>
+						</div>
+						<div class="d-flex">
+							<img src="https://cdn.eyesmag.com/content/uploads/sliderImages/2020/12/03/galina-bugaevskaya-koty-vezde-cats-everywhere%20(10)-b3a54e2b-cdd7-4791-b4cb-daba71a4cbf9.jpg" class="rounded-circle" style="width: 50px; height:50px;">
+							<div class="d-inline-block m-3">
+								<div class="d-flex">
+									<span>라마바</span>
+									<div>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+									</div>
+								</div>
+                <p class= "text-muted mb-0">
+								 희망을 마음에 품고 원대한 꿈을 향해 조금씩 전진하다
+                </p>
+							</div>
+						</div>
+						<div class="d-flex">
+							<img src="https://image.dongascience.com/Photo/2019/05/15568758367729.jpg" class="rounded-circle" style="width: 50px; height:50px;">
+							<div class="d-inline-block m-3">
+								<div class="d-flex">
+									<span>사아자</span>
+									<div>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+									</div>
+								</div>
+                <p class= "text-muted mb-0">
+								 한 인간의 출애굽기. 한 자유로운 영혼을 가두어버린 감옥이라는 또다른 사회. 나만의 최고의 걸작이라고 믿어 의심치 않는다.
+                </p>         
+                </div>
+						</div>
+						<div class="d-flex">
+							<img src="https://dimg.donga.com/wps/NEWS/IMAGE/2019/09/27/97615710.3.jpg" class="rounded-circle" style="width: 50px; height:50px;">
+							<div class="d-inline-block m-3">
+								<div class="d-flex">
+									<span>차카타</span>
+									<div>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+									</div>
+								</div>
+                <p class= "text-muted mb-0">
+								 ‘재미있다’ 라는 말은 이 영화를 두고 하는 말 단언컨데 남녀노소 절대 호불호 없는 영화 (무족건 호)
+                </p>
+							</div>
+						</div>
+						<div class="d-flex">
+							<img src="https://rimage.gnst.jp/livejapan.com/public/article/detail/a/10/00/a1000408/img/basic/a1000408_main.jpg?20210428225326&q=80&rw=750&rh=536" class="rounded-circle" style="width: 50px; height:50px;">
+							<div class="d-inline-block m-3">
+								<div class="d-flex">
+									<span>파하</span>
+									<div>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+									</div>
+								</div>
+                <p class= "text-muted mb-0">
+								 좋은 것은 절대 사라지지 않아요.
+                </p>
+							</div>
+						</div>
+						<div class="d-flex">
+							<img src="http://www.chemicalnews.co.kr/news/photo/202106/3636_10174_4958.jpg" class="rounded-circle" style="width: 50px; height:50px;">
+							<div class="d-inline-block m-3">
+								<div class="d-flex">
+									<span>에이비</span>
+									<div>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+									</div>
+								</div>
+                <p class= "text-muted mb-0">
+								 쇼생크에서 평생을 보냈으니, 시스템이 통제하는 대로밖에 나는 살수없어.
+                </p>
+							</div>
+						</div>
+						<div class="d-flex">
+							<img src="http://ojsfile.ohmynews.com/CRI_T_IMG/2021/0927/A0002776078_T.jpg" class="rounded-circle" style="width: 50px; height:50px;">
+							<div class="d-inline-block m-3">
+								<div class="d-flex">
+									<span>씨디이</span>
+									<div>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+									</div>
+								</div>
+                <p class= "text-muted mb-0">
+								 금도를 넘은 것이 짜릿한 이유는 자유가 설명한다.
+                </p>
+							</div>
+						</div>
+						<div class="d-flex">
+							<img src="https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/201408/23/htm_201408232184630103011.jpg" class="rounded-circle" style="width: 50px; height:50px;">
+							<div class="d-inline-block m-3">
+								<div class="d-flex">
+									<span>에프지</span>
+									<div>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+									</div>
+								</div>
+                <p class= "text-muted mb-0">
+								 희망은 쟁취하는 것
+                </p>
+                </div>
+						</div>
+						<div class="d-flex">
+							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBnwBNo-XRQ1x8Rxtk-LGNx5xwRegtzu9LFg&usqp=CAU" class="rounded-circle" style="width: 50px; height:50px;">
+							<div class="d-inline-block m-3">
+								<div class="d-flex">
+									<span>에이치</span>
+									<div>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+									</div>
+								</div>
+                <p class= "text-muted mb-0">
+								 자유, 그 이상의 가치
+                </p>
+							</div>
+						</div>
+						<div class="d-flex">
+							<img src="http://www.nie.re.kr/endangered_species/getDaepyoImage.do?thumbYn=Y&species_sn=12" class="rounded-circle" style="width: 50px; height:50px;">
+							<div class="d-inline-block m-3">
+								<div class="d-flex">
+									<span>아이제이</span>
+									<div>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+										<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.71 1.089a.312.312 0 0 1 .56 0l1.134 2.298c.015.031.045.052.079.057l2.536.369a.312.312 0 0 1 .173.533L7.357 6.135a.104.104 0 0 0-.03.092l.433 2.527a.313.313 0 0 1-.453.329L5.038 7.89a.104.104 0 0 0-.097 0L2.672 9.083a.312.312 0 0 1-.453-.33l.433-2.526a.104.104 0 0 0-.03-.092L.787 4.345a.312.312 0 0 1 .173-.532l2.536-.369a.104.104 0 0 0 .079-.057L4.709 1.09Z" fill="#FBC02D"></path></svg>
+									</div>
+								</div>
+                <p class= "text-muted mb-0">
+								 앤디의 탈옥을 만들어낸 것은 락해머도, 레드도 아니라 희망이었다
+                </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-lg-4">
+			 베스트 감상평
+			<div class="card text-bg-secondary mb-3" style="max-width: 18rem;">
+				<div class="card-header">
+					<div>
+						<img class="rounded-circle" src="https://blog.kakaocdn.net/dn/cZ0Jmx/btqYCoQe3wt/c2Aiu3L5gdzDAjaKXkLXl1/img.jpg" alt="" style="width: 40px; height: 40px;">손세철
+					</div>
+					<svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.419 2.178a.625.625 0 0 1 1.12 0l2.27 4.597c.03.061.088.104.156.113l5.073.738a.625.625 0 0 1 .347 1.066l-3.671 3.578a.208.208 0 0 0-.06.184l.866 5.053c.088.51-.448.9-.906.659l-4.538-2.386a.208.208 0 0 0-.194 0l-4.537 2.386a.625.625 0 0 1-.907-.659l.866-5.053a.208.208 0 0 0-.06-.184l-3.67-3.578a.625.625 0 0 1 .346-1.066l5.073-.738a.208.208 0 0 0 .157-.113l2.269-4.598Z" fill="#FBC02D"></path></svg>
+					<svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.419 2.178a.625.625 0 0 1 1.12 0l2.27 4.597c.03.061.088.104.156.113l5.073.738a.625.625 0 0 1 .347 1.066l-3.671 3.578a.208.208 0 0 0-.06.184l.866 5.053c.088.51-.448.9-.906.659l-4.538-2.386a.208.208 0 0 0-.194 0l-4.537 2.386a.625.625 0 0 1-.907-.659l.866-5.053a.208.208 0 0 0-.06-.184l-3.67-3.578a.625.625 0 0 1 .346-1.066l5.073-.738a.208.208 0 0 0 .157-.113l2.269-4.598Z" fill="#FBC02D"></path></svg>
+					<svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.419 2.178a.625.625 0 0 1 1.12 0l2.27 4.597c.03.061.088.104.156.113l5.073.738a.625.625 0 0 1 .347 1.066l-3.671 3.578a.208.208 0 0 0-.06.184l.866 5.053c.088.51-.448.9-.906.659l-4.538-2.386a.208.208 0 0 0-.194 0l-4.537 2.386a.625.625 0 0 1-.907-.659l.866-5.053a.208.208 0 0 0-.06-.184l-3.67-3.578a.625.625 0 0 1 .346-1.066l5.073-.738a.208.208 0 0 0 .157-.113l2.269-4.598Z" fill="#FBC02D"></path></svg>
+					<svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.419 2.178a.625.625 0 0 1 1.12 0l2.27 4.597c.03.061.088.104.156.113l5.073.738a.625.625 0 0 1 .347 1.066l-3.671 3.578a.208.208 0 0 0-.06.184l.866 5.053c.088.51-.448.9-.906.659l-4.538-2.386a.208.208 0 0 0-.194 0l-4.537 2.386a.625.625 0 0 1-.907-.659l.866-5.053a.208.208 0 0 0-.06-.184l-3.67-3.578a.625.625 0 0 1 .346-1.066l5.073-.738a.208.208 0 0 0 .157-.113l2.269-4.598Z" fill="#FBC02D"></path></svg>
+					<svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.419 2.178a.625.625 0 0 1 1.12 0l2.27 4.597c.03.061.088.104.156.113l5.073.738a.625.625 0 0 1 .347 1.066l-3.671 3.578a.208.208 0 0 0-.06.184l.866 5.053c.088.51-.448.9-.906.659l-4.538-2.386a.208.208 0 0 0-.194 0l-4.537 2.386a.625.625 0 0 1-.907-.659l.866-5.053a.208.208 0 0 0-.06-.184l-3.67-3.578a.625.625 0 0 1 .346-1.066l5.073-.738a.208.208 0 0 0 .157-.113l2.269-4.598Z" fill="#FBC02D"></path></svg>
+				</div>
+				<div class="card-body text-muted mb-0 text-white-50" >
+					 탈옥 후에 보니 더 재미있네요
+					<p class="card-text">
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- footer -->
+<footer class="text-center footer my-5 ">
+<p>
+	 Web-bootstrap PJT, by 김다겸, 손세철
+</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+</body>
+</html>

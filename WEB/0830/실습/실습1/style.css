@@ -1,0 +1,23 @@
+/* 아래에 CSS를 작성해주세요. */
+.head {
+  display: flex;
+  justify-content: center;
+}
+.head2 {
+  display: flex;
+  font-size : 12px;
+  justify-content: center;
+}
+
+.card {
+  float : left;
+  margin : 1rem;
+  width: 300px;
+
+
+}
+.card-image {
+  border-radius: 1rem;
+  width: 100%;
+  
+}

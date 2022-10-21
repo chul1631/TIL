@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = true
+	symlinks = false
+	ignorecase = true
+[remote "origin"]
+	url = https://github.com/jupiter6676/01-Pair-03.git
+	fetch = +refs/*:refs/*
+	mirror = true
+	pushurl = https://github.com/chul1631/10-14-project.git

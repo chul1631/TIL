@@ -1,0 +1,11 @@
+{% extends 'base.html' %} {% load django_bootstrap5 %} {% block body %}
+<h1>조회</h1>
+<a href="{% url 'accounts:index' %}"> 회원 목록 조회</a>
+<a href="{% url 'accounts:detail' %}"> 회원 정보 조회</a>
+{% for accounts in accounts %}
+<h3>
+  <a href="{% url 'accounts:detail' accounts.pk %}">{{ accounts.title }}</a>
+</h3>
+<p>{{ accounts.created_at }} | {{ accounts.updated_at }}</p>
+<hr />
+{% endfor %} {% endblock %}

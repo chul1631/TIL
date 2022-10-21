@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+{% block content %}
+<div class="form">
+  <h1>회원 목록</h1>
+  <div class="row justify-content-center">
+    {% for user in users %}
+    <div>
+      <a href="{% url 'accounts:detail' user.pk %}"> {{ user.username }} </a>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+  <div class="row text-center mt-5">
+    {% if user.is_authenticated %}
+      <!-- 로그인 상태라면 작동하는 코드 -->
+      <div>
+        <p class="mt-5">로그아웃 하시겠어요?</p>
+        <a class="btn btn-danger me-3" href="{% url 'accounts:logout' %}">로그아웃</a>
+      </div>
+    {% else %}
+      <!-- 로그아웃 상태라면 작동하는 코드 -->
+      <!-- 회원인 경우 -->
+      <div>
+        <p class="mt-5">회원이신가요?</p>
+        <a class="btn btn-primary me-3" href="{%  url 'accounts:login' %}">로그인</a>
+      </div>
+      <!-- 회원이 아닌 경우 -->
+      
+      <div>
+        <p class="mt-5">회원이 아니신가요?</p>
+        <div class="form d-flex justify-content-center my-3">
+          <a class="btn btn-primary me-3" href="{%  url 'accounts:signup' %}">회원가입</a>
+        </div>
+      </div>
+    {% endif %}
+  </div>
+{% endblock content %}

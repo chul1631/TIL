@@ -1,0 +1,19 @@
+{% extends 'base.html' %}{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <body>
+      <div class="container ">
+    <h1 class ='text-center'>리뷰 게시판</h1>
+  </div>
+    {% for Review in articles %}
+      <h3> <a href = "{% url 'articles:detail' Review.pk %}"> {{ Review.title }}</h3></a>
+      <p> 내용: {{ Review.content }} | 영화 제목 : {{ Review.movie_name }} | 영화 평점 : {{ Review.grade }} |{{ Review.created_at }} | {{ Review.updated_at }}    
+        {% endfor %}
+        <hr>
+      </p>
+        
+    </body>
+</html>
+{% endblock %}

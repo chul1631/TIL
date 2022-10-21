@@ -1,0 +1,280 @@
+{% extends 'base.html' %} {% block content %} {% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MOVIE</title>
+    
+<div class = "contianer d-flex justify-content-between">
+  <div class="card" style="width: 18rem;">
+    <img src="{% static 'images/no.jpg' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">노인을 위한 나라는 없다</h5>
+      <p class="card-text"></p>
+
+      <div class="modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">노인을 위한 나라는 없다</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>총격전이 벌어진 끔찍한 현장에서 르웰린 모스(조슈 브롤린)는
+                우연히 이백만 달러가 들어있는 가방을 손에 넣는다.
+                그러나 이 가방을 찾는 또 다른 이가 있었으니 바로 살인마 안톤 시거(하비에르 바르뎀).
+                그리고 이들의 뒤를 쫓는 보안관 벨(토미 리 존스)까지 합세하면서
+                누구도 피할 수 없는, 목숨을 건 추격전이 시작된다.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        줄거리
+  </button>
+    </div>
+  </div>
+
+
+
+  <div class="card" style="width: 18rem;">
+    <img src="{% static 'images/good will hunting.jpg' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Good will hunting</h5>
+      <p class="card-text"></p>
+
+      <div class="modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        줄거리
+  </button>
+    </div>
+  </div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Good will</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        “윌, 네 잘못이 아니야.”
+        수학, 법학, 역사학 등 모든 분야에 재능이 있는 ‘윌’(맷 데이먼)은
+         천재적인 두뇌를 가지고 있지만 어린 시절 받은 상처로 인해
+         세상에 마음을 열지 못하는 불우한 반항아.
+         
+         절친인 ‘처키’(벤 애플렉)와 어울리던
+         ‘윌’의 재능을 알아본 MIT 수학과 ‘램보’ 교수는
+         대학 동기인 심리학 교수 ‘숀’(로빈 윌리엄스)에게 그를 부탁하게 되고
+         거칠기만 하던 ‘윌’은 ‘숀’과 함께 시간을 보낼수록
+         상처를 위로 받으며 조금씩 변화하기 시작하는데…
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+
+
+  <div class="card" style="width: 18rem;">
+    <img src="{% static 'images/이터널.jpg' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Iternal sunshine</h5>
+      <p class="card-text"></p>
+
+      <div class="modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        줄거리
+  </button>
+    </div>
+  </div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        사랑은 그렇게 다시 기억된다..
+        조엘은 아픈 기억만을 지워준다는 라쿠나사를 찾아가 헤어진 연인 클레멘타인의 기억을 지우기로 결심한다. 기억이 사라져 갈수록 조엘은 사랑이 시작되던 순간, 행복한 기억들, 가슴 속에 각인된 추억들을 지우기 싫어지기만 하는데... 당신을 지우면 이 아픔도 사라질까요? 사랑은 그렇게 다시 기억된다.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+
+
+
+  <div class="card" style="width: 18rem;">
+    <img src="{% static 'images/catch me.jpg' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">catch me if you can</h5>
+      <p class="card-text"></p>
+
+      <div class="modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        줄거리
+  </button>
+    </div>
+  </div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        2003년을 여는 최고의 사건! | 스필버그가 선사하는 거짓말 같은 실화
+          전학 첫날 선생님으로 위장, 1주일 동안 전교생을 골탕먹인 당돌한 10대 프랭크(레오나르도 디카프리오 분) 부모의 이혼으로 무작정 가출한 프랭크는 본격적으로 남을 속이는 천재적 재능을 발휘하기 시작한다. 기자를 사칭해 항공사의 허점을 알아낸 프랭크. 그는 조종사로 위장, 모든 항공 노선에 무임승차는 물론 회사 수표를 위조해 전국 은행에서 140만 달러를 가로챈다.
+            하지만 꼬리가 길면 밟히는 법. 21년 경력의 FBI 최고의 요원 칼 핸러티가 프랭크의 뒤를 쫓고, 오랜 추적 끝에 드디어 혈혈단신 프랭크의 호텔방을 덮친 칼. 하지만 칼과 마주친 프랭크는 정부 비밀요원으로 둔갑, 증거물을 챙긴다며 위조수표를 챙겨 들고 여유롭게 빠져나온다. 뒤늦게 자신이 속았음을 깨달은 칼은 자존심 회복을 결심한다. 그리고 마침내 찾은 프랭크의 가족. 하지만 자신을 속인 프랭크가 겨우 17살의 고등학생이라는 사실에 또다시 칼의 자존심은 무너지고. 과연 칼은 프랭크를 잡을 수 있을까? 이들의 유쾌한 게임은 이제 시작이다.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+
+
+  <div class="card" style="width: 18rem;">
+    <img src="{% static 'images/joker.jpg' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">dark knight rises</h5>
+      <p class="card-text"></p>
+
+      <div class="modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        줄거리
+  </button>
+    </div>
+  </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        배트맨’ vs. ‘베인’, 운명을 건 최후의 전투
+        다크 나이트 신화의 전설이 끝난다.
+         배트맨이 조커와의 대결을 끝으로 세상에서 모습을 감춘 8년 후,
+         하비 덴트의 죽음에 대한 책임을 떠안은 배트맨은 모든 것을 희생하며 떠나고..
+         범죄방지 덴트법으로 인해 한동안 평화가 지속되던 고담시의 파멸을 예고하며 나타난 마스크를 쓴 잔인한 악당,
+         최강의 적 베인이 등장한다.
+         베인은 배트맨이 스스로 택한 유배 생활에 종지부를 찍게 하지만,
+         다시 돌아온 배트맨에게 베인은 만만한 상대가 아니다.
+         자신을 거부한 사람들의 고통을 지켜볼 것인가, 정의의 수호자로 나설 것인가.
+         배트맨은 승패를 알 수 없는 마지막 전투를 시작하려 하는데…
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+
+
+
+
+  <body>
+  </body>
+</html>
+{% endblock %}

@@ -1,0 +1,8 @@
+<h1>글</h1>
+<!-- form : 사용자에게 양식 제공, 값을 받아(input : name,value) 서버에 전송(action) -->
+
+<form action="{% url 'app:create' %}" method="POST">
+  {% csrf_token %} {{ app_form.as_p }}
+
+  <input type="submit" value="추가" />
+</form>

@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  width: 1280px;
+  color: #333333;
+  background-color: rgb(245, 248, 242);
+}
+
+.nav{
+  display:flex;
+  justify-content: space-between;
+  position:sticky;
+  background-color: white;
+}
+
+.nav-list {
+  display:flex;
+  padding:0;
+  margin:10px;
+  left: 30px;
+}
+
+.nav-link {
+  text-decoration: none;
+  margin: 20px;
+  color: rgb(221, 174, 174);
+
+}
+
+.nav-link:visited {
+  color: black;
+}
+.nav-link:hover {
+  color:rgb(87, 87, 126);
+  background-color:rgb(105, 207, 118);
+}
+
+.nav-item {
+  margin: 10px;
+}
+
+
+.cloth {
+  background-image: url('../assets/apparel.jpeg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 700px;
+}
+  
+.About{
+  display:flex;
+  text-align: center;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  justify-content: center;
+}
+
+
+.About-image{
+  width: 500px;
+  border-radius: 20px;
+  margin: 2rem;
+
+}
+
+
+.info{
+  margin-top:2rem;
+  line-height:2;
+  margin-top: 2rem;
+
+}
+.info h2{  
+  text-align: center;
+}
+
+.info2{
+  text-align:left;
+}
+
+.More{
+  font-size:30px;
+  display:flex;
+  justify-content: center;
+  font-weight:bold;
+  
+}
+
+.Line{
+  display:flex;
+  height:5rem;
+}
+
+.what{
+  text-align: center;
+  line-height: 1.5;
+  
+}
+.More-image{
+  width:64px;
+  height:64px;
+}
+
+.More-images{
+  display:flex;
+  justify-content: space-evenly;
+}
+
+.Line2{
+  height:5rem;
+}
+
+.footer{
+  background-size: 1280px;
+  height: 40px;
+  width: 40px;
+  bottom: 20px; 
+  right: 30px;
+  position: fixed;
+}
+
+.product {
+  width: 1280px;
+  margin-top: 5rem;
+}
+
+.product_list {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.product_list li {
+  width: 21rem;
+  height: 25rem;
+  margin-right: 1rem;
+  border: 2px solid rgb(25, 10, 26);
+}
+
+.product_img {
+  padding: 8px;
+  width: 20rem;
+  height: 10rem;
+}
+
+.product_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.product_text {
+  padding: 8px;
+  line-height: 20px;
+}
+
+.product_text h3 {
+  text-align: center;
+}
+
+.product_text p {
+  margin-top: 1rem;
+}

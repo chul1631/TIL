@@ -1,0 +1,12 @@
+{% extends 'base.html' %} {% block content %}
+<h1>수정하기</h1>
+<form method="post" action="">
+  {% csrf_token%} {{form.as_p}}
+  <body>
+    <h1>{{app.title}}</h1>
+    {{ apps:pk }번 게시글
+    <p>{{ app.created_at }} | {{ app.updated_at }}</p>
+    <p>{{ app.content }}</p>
+  </body>
+</form>
+{% endblock %}

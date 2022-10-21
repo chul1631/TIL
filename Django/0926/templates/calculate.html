@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class= "container">
+  <h1 class="text-center m-3 "> 사칙연산 </h1>
+    <div class = "flex-column align-center">
+      {{ var1 }} + {{ var2 }} = {{ sum }}
+    </div>
+      <div class = "flex-column align-center">
+        {{ var1 }} - {{ var2 }} = {{ sub }}
+      </div>
+      <div class = "flex-column align-center">
+        {{ var1 }} * {{ var2 }} = {{ mul }}
+      </div>
+      <div class = "flex-column align-center">
+        {{ var1 }} // {{ var2 }} = {{ div }}
+      </div>
+  </div>
+
+{% endblock %}
