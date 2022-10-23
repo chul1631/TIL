@@ -1,3 +1,7 @@
+import sys
+
+sys.stdin = open("BJ_1914.txt", "r")
+
 N = int(input())
 
 
